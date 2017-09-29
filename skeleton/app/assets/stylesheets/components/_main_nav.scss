@@ -1,34 +1,49 @@
 .main-nav {
-
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
 }
 
 .left-nav > ul,
 .right-nav > ul {
+  display: flex;
+  align-items: center;
+}
 
+.left-nav li,
+.right-nav button {
+  text-transform: uppercase;
 }
 
 .left-nav > ul > li {
-
+  font-family: $sans-serif;
+  font-size: 11px;
+  color: black;
 }
 
 .right-nav > ul > li {
-
+  margin-left: 3px;
 }
 
-.right-nav > ul > li:last-of-type {
+.left-nav > ul > li {
+  margin-left: 20px;
+}
 
+.right-nav > ul > li:last-of-type > button {
+  background: none;
 }
 
 .left-nav > ul > li:hover,
-.right-nav > ul > li:last-of-type:hover {
-
+.right-nav > ul > li:last-of-type:hover,
+.right-nav > ul > li:last-child > button:hover {
+  background: $lightest-gray;
 }
 
 .left-nav span {
-
+  margin: 7px;
 }
 
 
 .right-nav i {
-
+  font-size: 15px;
 }
